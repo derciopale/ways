@@ -16,6 +16,8 @@ class CreateCadeirasTable extends Migration
         Schema::create('cadeiras', function (Blueprint $table) {
             $table->id();
              $table->string('nome');
+             $table->date('ano');
+             $table->string('docente');
              $table->string();
             $table->timestamps();
         });
